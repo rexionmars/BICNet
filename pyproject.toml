@@ -3,15 +3,21 @@ name = "makeconciency"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = [
     "biopython>=1.84",
+    "gymnasium[atari,mujoco,other]>=1.1.1",
     "imageio>=2.36.1",
+    "jax>=0.6.0",
     "matplotlib>=3.9.3",
-    "networkx>=3.4.2",
     "numpy>=2.2.0",
     "opencv-python>=4.10.0.84",
     "pandas>=2.2.3",
+    "pygame>=2.6.1",
+    "pyqt5>=5.15.11",
+    "pyqtgraph>=0.13.7",
+    "robosuite-models>=1.0.0",
+    "robosuite>=1.5.1",
     "scipy>=1.14.1",
     "seaborn>=0.13.2",
     "torch>=2.5.1",
