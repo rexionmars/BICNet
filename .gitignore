@@ -1,10 +1,84 @@
-# Python-generated files
+# Python
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+*.so
+.Python
 build/
+develop-eggs/
 dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
 wheels/
-*.egg-info
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
 # Virtual environments
+.env
 .venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# UV
+.python-version
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# Data files
+*.pkl
+*.npz
+*.h5
+*.hdf5
+*.csv
+*.json
+bicnet/data/logs/*
+bicnet/data/results/*
+!bicnet/data/dna/*.fasta
+!bicnet/data/dna/*.txt
+
+# Generated images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+*.avi
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+logs/

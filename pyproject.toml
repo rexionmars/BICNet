@@ -1,8 +1,21 @@
 [project]
-name = "makeconciency"
+name = "bicnet"
 version = "0.1.0"
-description = "Add your description here"
+description = "BioInspired Consciousness Network - A biomimetic neural network architecture for consciousness simulation"
 readme = "README.md"
+authors = [
+    {name = "BICNet Research Team"}
+]
+license = {file = "LICENSE"}
+keywords = ["neuroscience", "consciousness", "neural-networks", "biomimetic", "artificial-intelligence"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
 requires-python = ">=3.12"
 dependencies = [
     "biopython>=1.84",
@@ -22,3 +35,38 @@ dependencies = [
     "seaborn>=0.13.2",
     "torch>=2.5.1",
 ]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/BICNet"
+Repository = "https://github.com/yourusername/BICNet"
+Documentation = "https://github.com/yourusername/BICNet/blob/main/README.md"
+"Bug Tracker" = "https://github.com/yourusername/BICNet/issues"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=22.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_functions = ["test_*"]
+addopts = "--cov=bicnet --cov-report=html --cov-report=term-missing"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
